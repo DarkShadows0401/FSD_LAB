@@ -1,0 +1,162 @@
+
+  .button {
+    height: 50px;
+    width: 55px;
+    color: black;
+    background-color: antiquewhite;
+    margin: 1px;
+  }
+
+  .displayVal {
+    font-size: 21pt;
+    font-weight: 1000;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    overflow:hidden;
+    display: flex;
+    justify-content: right;
+  }
+
+  .calcVal {
+    display: flex;
+    justify-content: right;
+    font-size: 14pt;
+    font-weight: 700;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .toastNotification {
+    display: flex;
+    background-color: aquamarine;
+    border-radius: 5px;
+    color: black;
+    justify-content: center;
+    animation: fadeInOut 4s linear 1 forwards;
+    font-weight: 600;
+  }
+
+  .toastFadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 2s linear 2000ms, opacity 300ms;
+  }
+  .toastFadeIn {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 2s linear 400ms, opacity 300ms;
+  }
+
+  .sqrt {
+    padding-left: 15px;
+  }
+
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    box-shadow: 0 9px #999;
+  }
+
+  button:hover {
+    filter: brightness(80%);
+    box-shadow: 0 2px #999;
+  }
+
+  .button:active {
+    box-shadow: 0 2px #999;
+    transform: translateY(1px);
+  }
+
+  .button-bottom:hover {
+    filter: brightness(80%);
+    box-shadow: 0 9px #999;
+  }
+
+  .button-bottom:active {
+    box-shadow: 0 9px #999;
+    transform: translateY(1px);
+  }
+
+  .equals {
+    background-color: aquamarine;
+    box-shadow: 0 9px rgb(53, 112, 93);
+  }
+
+  .equals:hover {
+    filter: brightness(80%);
+    box-shadow: 0 9px rgb(53, 112, 93)
+  }
+
+  .equals:active {
+    filter: brightness(80%);
+    box-shadow: 0 9px rgb(53, 112, 93);
+    transform: translateY(1px);
+  }
+
+  .delete {
+    background-color: red;
+    box-shadow: 0 9px rgb(128, 53, 53);
+  }
+
+  .delete:hover {
+    filter: brightness(80%);
+    box-shadow: 0 2px rgb(128, 53, 53)
+  }
+
+  .delete:active {
+    filter: brightness(80%);
+    box-shadow: 0 2px rgb(128, 53, 53);
+    transform: translateY(1px);
+  }
+
+  @media (pointer:none), (pointer:coarse) {
+    button:hover {
+      filter: brightness(100%);
+    }
+  
+    .button:active {
+      filter: brightness(100%);
+      box-shadow: 0 2.3px #999;
+    }
+
+    .button-bottom:active{
+      filter: brightness(100%);
+      box-shadow: 0 9px #999;
+    }
+
+    .button-bottom:hover {
+      filter: brightness(100%);
+      box-shadow: 0 9px #999;
+    }
+
+    .delete:hover {
+      filter: brightness(100%);
+      box-shadow: 0 2px rgb(128, 53, 53)
+    }
+  
+    .delete:active {
+      filter: brightness(100%);
+      box-shadow: 0 2px rgb(128, 53, 53);
+      transform: translateY(1px);
+    }
+
+    .equals:hover {
+      filter: brightness(100%);
+      box-shadow: 0 9px rgb(53, 112, 93)
+    }
+  
+    .equals:active {
+      filter: brightness(100%);
+      box-shadow: 0 9px rgb(53, 112, 93);
+      transform: translateY(1px);
+    }
+  }
